@@ -1,0 +1,20 @@
+# Dockerize a simple Python script with third-party modules
+
+
+## How to dockerize a Python script (example1) and a Python web app (example2)
+
+# 1. Build the Docker image
+
+$ docker build -t python-imdb . 
+
+# 2. Run the Docker image
+
+Without user input:
+
+$ docker run python-imdb
+
+If you want user input (comment out the break in main.py):
+
+$ docker run -t -i python-imdb
+
+-i: interactive, -t: pseudo terminal
