@@ -57,3 +57,15 @@ understand who is on your network.
 Understand who is using your network.
 Don't allow outsiders to connect to your private networks.
 This is especially the case in wireless networks. 
+
+## Mobile Based Attacks
+
+The following video will help explain mobile based attacks and the damage that they are currently doing.
+
+Rise of Mobile Threats | Gagan Singh | TEDxHongKongSalon - https://www.youtube.com/watch?v=zXgUUWmuoLw 
+
+
+## Lecture Slides
+
+The course lecture slides can also be found at:
+https://academics.uccs.edu/greg/Coursera/Practical_Computer_Security/Course2/ 
