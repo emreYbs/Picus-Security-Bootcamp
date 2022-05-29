@@ -23,6 +23,7 @@
 
 12. https://wiki.owasp.org/index.php/Reviewing_Code_for_SQL_Injection
 
+13. https://sucuri.net/guides/owasp-top-10-security-vulnerabilities-2020/
 
 YOUTUBE:
 
