@@ -6,10 +6,11 @@
 ## Cyber Threats and Attack Vectors
 
 *Included Topics:*
-Week 1 - Threats and Attack Vectors in Computer Security
-Week 2 - Network and system based attacks
-Week 3 - Cloud Security
-Week 4 - Common Vulnerabilities
+
+Week 1 - Threats and Attack Vectors in Computer Security <br>
+Week 2 - Network and system based attacks <br>
+Week 3 - Cloud Security <br>
+Week 4 - Common Vulnerabilities 
 
 # Elective Course : 
 
@@ -17,9 +18,9 @@ Week 4 - Common Vulnerabilities
 
 *Included Topics:*
 
-Week 1 - Not Included
-Week 2 - Injection Problems
-Week 3 - Problems Arising From Broken Authentication
+Week 1 - Not Included <br>
+Week 2 - Injection Problems <br>
+Week 3 - Problems Arising From Broken Authentication <br>
 Week 4 - Sensitive Data Exposure Problems
 
 
