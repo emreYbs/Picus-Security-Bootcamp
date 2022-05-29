@@ -78,9 +78,36 @@ https://academics.uccs.edu/greg/Coursera/Practical_Computer_Security/Course2/
 
 **Wireless security** is the prevention of unauthorized access or damage to computers or data using wireless networks, which include Wi-Fi networks. The term may also refer to the protection of the wireless network itself from adversaries seeking to damage the confidentiality, integrity, or availability of the network. The most common type is Wi-Fi security, which includes Wired Equivalent Privacy (WEP) and Wi-Fi Protected Access (WPA). WEP is an old IEEE 802.11 standard from 1997.
 
+A **replay attack** _(also known as a repeat attack or playback attack)_ is a form of network attack in which valid data transmission is maliciously or fraudulently repeated or delayed. This is carried out either by the originator or by an adversary who intercepts the data and re-transmits it, possibly as part of a spoofing attack by IP packet substitution. This is one of the lower-tier versions of a man-in-the-middle attack. **Replay attacks are usually passive in nature.** ✔️ 
+
+Suppose Alice wants to prove her identity to Bob. Bob requests her password as proof of identity, which Alice dutifully provides (possibly after some transformation like hashing, or even salting, the password); meanwhile, Eve is eavesdropping on the conversation and keeps the password (or the hash). After the interchange is over, Eve (acting as Alice) connects to Bob; when asked for proof of identity, Eve sends Alice's password (or hash) read from the last session which Bob accepts, thus granting Eve access.
+
+## **Prevention of Replay Attacks**
+
+Replay attacks can be prevented by tagging each encrypted component with a session ID and a component number. This combination of solutions does not use anything that is interdependent on one another. Due to the fact that there is no interdependency, there are fewer vulnerabilities. This works because a unique, random session ID is created for each run of the program; thus, a previous run becomes more difficult to replicate. In this case, an attacker would be unable to perform the replay because on a new run the session ID would have changed.
+
+Session IDs, also known as session tokens, are one mechanism that can be used to help avoid replay attacks. The way of generating a session ID works as follows.
+
+    Bob sends a one-time token to Alice, which Alice uses to transform the password and send the result to Bob. For example, she would use the token to compute a hash function of the session token and append it to the password to be used.
+    On his side Bob performs the same computation with the session token.
+    If and only if both Alice’s and Bob’s values match, the login is successful.
+    Now suppose an attacker Eve has captured this value and tries to use it on another session. Bob would send a different session token, and when Eve replies with her captured value it will be different from Bob's computation so he will know it is not Alice.
+
+Session tokens should be chosen by a random process (usually, pseudorandom processes are used). Otherwise, Eve may be able to pose as Bob, presenting some predicted future token, and convince Alice to use that token in her transformation. Eve can then replay her reply at a later time (when the previously predicted token is actually presented by Bob), and Bob will accept the authentication.
+
+One-time passwords are similar to session tokens in that the password expires after it has been used or after a very short amount of time. They can be used to authenticate individual transactions in addition to sessions. These can also be used during the authentication process to help establish trust between the two parties that are communicating with each other.
+
+Bob can also send nonces but should then include a message authentication code (MAC), which Alice should check.
+
+Timestamping is another way of preventing a replay attack.[3] Synchronization should be achieved using a secure protocol. For example, Bob periodically broadcasts the time on his clock together with a MAC. When Alice wants to send Bob a message, she includes her best estimate of the time on his clock in her message, which is also authenticated. Bob only accepts messages for which the timestamp is within a reasonable tolerance. Timestamps are also implemented during mutual authentication, when both Bob and Alice authenticate each other with unique session IDs, in order to prevent the replay attacks. The advantages of this scheme are that Bob does not need to generate (pseudo-) random numbers and that Alice doesn't need to ask Bob for a random number. In networks that are unidirectional or near unidirectional, it can be an advantage. The trade-off being that replay attacks, if they are performed quickly enough i.e. within that 'reasonable' limit, could succeed. 
+
+**Real World Replay Attack Example** : _In the folk tale Ali Baba and the Forty Thieves, the thieves' captain used the passphrase "Open, Simsim" to open the door to their loot depot. This was overheared by Ali Baba who later reused the passphrase to get access and collect as much of the loot as he could carry._
+
+https://en.wikipedia.org/wiki/Replay_attack
+
 ## Defenses
 
-- Wireless security is just an aspect of computer security; however, organizations may be particularly vulnerable to security breaches[6] caused by rogue access points.
+- Wireless security is just an aspect of computer security; however, organizations may be particularly vulnerable to security breaches caused by rogue access points.
 
 If an employee (trusted entity) brings in a wireless router and plugs it into an unsecured switchport, the entire network can be exposed to anyone within range of the signals. Similarly, if an employee adds a wireless interface to a networked computer using an open USB port, they may create a breach in network security that would allow access to confidential materials. However, there are effective countermeasures (like disabling open switchports during switch configuration and VLAN configuration to limit network access) that are available to protect both the network and the information it contains, but such countermeasures must be applied uniformly to all network devices. 
 
