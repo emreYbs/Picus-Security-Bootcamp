@@ -23,6 +23,8 @@ https://www.coursera.org/learn/cyber-threats-attack-vectors/supplement/cIIW1/lec
 
 - Watch on Youtube: https://www.youtube.com/watch?v=aeA7rDq4CnM
 
+![Week 2 Network based attacks Coursera](https://github.com/emreYbs/Picus-Security-Bootcamp/blob/main/Week%202/Coursera/Cyber%20Threats%20and%20Attack%20Vectors/Week%202%20Network%20based%20attacks%20Coursera.png)
+
 There's really two different kinds of attacks.There's active attacks and there's passive attacks.
 **Active attacks** are _much more common_, because we're trying to get information real time. 
 
