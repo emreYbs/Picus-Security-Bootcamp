@@ -18,6 +18,24 @@ Cloud security refers to the technologies, policies, controls, and services that
 
 These lecture slides are also available at: https://academics.uccs.edu/greg/Coursera/Practical_Computer_Security/Course2/
 
+## `What is Infrastructure as a Service?` 
+
+The term Infrastructure as a Service, or IaaS (also, occasionally called Hardware as a Service), falls within the subject area of Cloud Computing and is sometimes accompanied by the terms Platform as a Service (PaaS) and Software as a Service (SaaS).  
+
+Infrastructure as a Service describes a model where organizations outsource hardware requirements such as database storage, networking components, servers, and database/server virtualization to an outside vendor . The organization will often pay on a per-use basis meaning the vendor charges based on actual storage space used in conjunction with data transmission rates.   The vendor provides the equipment and is responsible for its maintenance which typically offers dynamic scalability as the purchasing organization’s hardware requirements increase.  
+
+Infrastructure as a Service means the companies can focus on creating applications without incurring the upfront costs of purchasing and maintaining underutilized hardware.
+
+**Infrastructure as a service (IaaS)** is a form of cloud computing that provides virtualized computing resources over the internet. IaaS is one of the three main categories of cloud computing services, alongside software as a service (SaaS) and platform as a service (PaaS).
+
+In the _IaaS model_, the cloud provider manages IT infrastructures such as storage, server and networking resources, and delivers them to subscriber organizations via virtual machines accessible through the internet. IaaS can have many benefits for organizations, such as potentially making workloads faster, easier, more flexible and more cost efficient.
+IaaS architecture
+
+In an _IaaS_ service model, a cloud provider hosts the infrastructure components that are traditionally present in an on-premises data center. This includes servers, storage and networking hardware, as well as the **virtualization** or **hypervisor** layer.
+
+The following diagram shows a simplified view of the 3 main layers of cloud computing and how each layer builds upon the one which precedes it.  
+
+![layers of cloud computing](https://www.modernanalyst.com/Portals/0/images/iaas-paas-saas.jpg)
 
 
 ## Cloud Security is a Shared Responsibility
