@@ -21,6 +21,8 @@
 
 11. https://www.infosecurity-magazine.com/adv-download/?id=306731&download=true
 
+12. https://wiki.owasp.org/index.php/Reviewing_Code_for_SQL_Injection
+
 
 YOUTUBE:
 
