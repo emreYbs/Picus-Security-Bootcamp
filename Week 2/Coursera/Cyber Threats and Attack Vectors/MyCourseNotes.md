@@ -36,6 +36,8 @@ whereas passive attacks, what is seen there is more compromised data.
 So password manipulation for example.
 Let's dive into each one of these.
 
+**Denial of Service attacks are very hard to mitigate.**
+
 Our first active attack is going to be sniffing.
 Sniffing is the most common type of active attack.
 It is reading, monitoring or capturing the full packets from a network device.
