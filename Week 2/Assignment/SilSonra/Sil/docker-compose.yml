@@ -22,3 +22,6 @@ services:
 volumes:
   mysql:
   mysql_config:
+  
+  - name: Snyk
+  uses: snyk/actions@0.3.0
