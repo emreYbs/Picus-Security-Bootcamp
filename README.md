@@ -7,4 +7,7 @@
 ### In this repo, there are my assignments, notes and some files I utilized during the Bootcamp. I will check the repo and _make it better for future bootcamp students by adding other files, my other notes_ 
 - (first I need to convert markdown and upload pdf versions for convience and check the Schedule and Coursera Course Weeks... **for now**, _it is not fully synchronized_)
 
-### I also added my assignments and quizzes to give an idea for future students if this *Picus Security Bootcamp* is arranged in the ffollowing years.
+### I also added my assignments and quizzes to give an idea for future students if this *Picus Security Bootcamp* is arranged in the following years.
+
+
+![emreybs blog in progress](https://user-images.githubusercontent.com/59505246/173427161-70657707-e1a8-49e7-b01a-29cf58451621.png)
